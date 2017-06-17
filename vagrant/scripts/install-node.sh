@@ -19,7 +19,7 @@ echo "Node file name:" $vArchiveFile
 
 # TODO: error if no file
 
-echo "Prepareing" $vTempDir "..."
+echo "Preparing" $vTempDir "..."
 rm -fR $vTempDir
 mkdir -p $vTempDir
 
@@ -53,3 +53,6 @@ echo "Checking version of node ..."
 node -v
 
 # TODO: enhance
+
+echo "Removing" $vTempDir "..."
+rm -fR $vTempDir
