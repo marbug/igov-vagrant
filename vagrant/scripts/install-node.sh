@@ -14,7 +14,7 @@ fi
 echo "Going to" $vNodeDir "..."
 cd $vNodeDir
 
-vArchiveFile=`ls -1 node*.tar.gz | tail -1`
+vArchiveFile=`ls -1 node*.tar.xz | tail -1`
 echo "Node file name:" $vArchiveFile
 
 # TODO: error if no file
@@ -30,7 +30,7 @@ echo "Going to" $vTempDir
 cd $vTempDir
 
 echo "Extracting" $vArchiveFile "..."
-tar xfz $vArchiveFile
+tar xf $vArchiveFile
 
 vArchiveDir=`ls -1 | grep -v $vArchiveFile`
 echo "Node dir name:" $vArchiveDir
