@@ -1,6 +1,6 @@
 #!/bin/bash
 
-vNodeDir="./install/node"
+vNodeDir="/vagrant/install/node"
 vTempDir="/tmp/igov"
 
 set -e
